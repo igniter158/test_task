@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test_task</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+<body>
+  <section class="main">
+    <form id="create_block">
+      <div class="main__form">
+        <div class="main__form__picture">
+          <label for="load_img">
+            <img src="https://icon-library.com/images/upload-icon/upload-icon-10.jpg" id="img">
+          </label>
+          <input type="file" id="load_img" accept="image/*" /> 
+        </div>
+      
+        <div class="main__form__container">
+          <div class="main__form__input">
+            <input  type="text" id="title" name="title"  pattern="[\u0400-\u04ff]{3,30}" placeholder="Заголовок" />
+           
+          </div>
+      
+          <div class="main__form__input">
+            <input type="text" id="link" name="link" placeholder="Ссылка" />
+          </div>
+
+          <div class="main__form__text">
+            <textarea placeholder="Сообщение" name="text" id="text" pattern="[\u0400-\u04ff]{3,30}" ></textarea>
+          </div>
+          
+          <div class="main__form__btn">
+            <div class="main__form__errors">
+            </div>
+            <button type="button" id="create">Создать</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section id="blocks" class="blocks">
+  </section>
+  
+<section class="show_more">
+    <a href="#" class="loadMore">Показать ещё</a>
+</section>
+
+
+  <script src="script.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  
+</body>
+</html>
