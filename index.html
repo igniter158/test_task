@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
+  
+</head>
 
 <body>
   <section class="main">
@@ -18,9 +19,10 @@
       <div class="main__form">
         <div class="main__form__picture">
           <label for="load_img">
-            <img src="https://icon-library.com/images/upload-icon/upload-icon-10.jpg" id="img">
+            <img src="" id="img">
           </label>
-          <input type="file" id="load_img" accept="image/*" /> 
+          <input type="file" id="load_img" name="load_img" accept="image/*" required="" value=""/> 
+         
         </div>
       
         <div class="main__form__container">
@@ -47,6 +49,7 @@
     </div>
   </section>
   <section id="blocks" class="blocks">
+    <div class="preloader"></div>
   </section>
   
 <section class="show_more">

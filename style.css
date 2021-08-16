@@ -112,6 +112,19 @@ label.error{
 
 }
 
+
+.preloader{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background:grey;
+    display: none;
+}
+.preloader_active{
+    display: block;
+}
 .blocks{
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +132,7 @@ label.error{
     max-width: 100rem;
     margin: 0 auto;
     padding-top: 2rem;
+    position: relative;
 }
 .blocks__block{
     max-width: calc(100% / 3);
@@ -201,3 +215,6 @@ transition: all 600ms ease-in-out;
 
 }
 
+.error_img{  
+    color: red;
+}
